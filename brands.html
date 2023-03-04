@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chronos</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Main content-->
+        <header>
+            <div class="logo"><a href="home.html"><img src="image/Logo.png"></a></div>
+            <nav class="navigation">
+                <i class="fa-solid fa-xmark option-close" onclick="optionClose()"></i>
+                <ul>
+                    <li><a href="home.html">Home<span></span></a></li>
+                    <li><a href="about.html">About Us<span></span></a></li>
+                    <li><a href="brands.html">Brands <i class="fa-solid fa-angle-down"></i><span></span></a>
+                        <div class="brands">
+                            <p><a href="brands.html#gshock">G-Shock<span></span></a></p>
+                            <p><a href="brands.html#casio">Casio<span></span></a></p>
+                            <p><a href="brands.html#seiko">Seiko<span></span></a></p>
+                            <p><a href="brands.html#rolex">Rolex<span></span></a></p>
+                         </div> 
+                    </li>
+                    <li><a href="contactUs.html">Contact us<span></span></a></li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping cart-icon" onclick="cartOpen()">
+                    <div class="red-circle">
+                        <div id="total">0</div>
+                    </div>
+                </i>
+            </nav>
+            <div class="option-open"><i class="fa-solid fa-bars" onclick="optionOpen()"></i></div>
+        </header>
+        <!-- Cart -->
+        <div class="cart w3-card">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Cart Content -->
+            <div class="cart-content">
+
+               
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- close -->
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="cartClose()"></i>
+        </div>
+
+
+        
+        <!--brands front-->
+        <div class="front-watch-brands-container">
+            <div class="text">
+                <h1>WATCHES</h1>
+            </div>
+        </div>
+
+
+        <!--gshock-->
+        <div class="gshock-container" id="gshock">
+            <div>
+                <div class="title" data-aos="fade-right">
+                    <h1>G-Shock</h1>
+                </div>
+                <div class="watch-items">
+                    <div class="w3-card card" id="drake" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio Women's BG169R-4 Baby-G Pink Whale Digital.png" alt="" class="product-img"></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Casio Women's BG169R-4</p>
+                            <div class="price-cart">
+                                <p class="price" price="3575">Php 3,575.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" id="drake" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/G-Shock 40th anniversary Adventurer's Stone Series.jpg" alt="" class="product-img"></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">G-Shock 40th anniversary Adventurer's Stone Series</p>
+                            <div class="price-cart">
+                                <p class="price" price="20899">Php 20,899.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio Ladies G-Shock S-Series G-Squad Connected White.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Casio Ladies G-Shock S-Series G-Squad</p>
+                            <div class="price-cart">
+                                <p class="price" price="4445">Php 4,445.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio G-Shock Casioak Anadigi 45.4mm Resin Band.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.7)</span>
+                            </div>
+                            <p class="watch-name">Casio G-Shock Casioak Anadigi 45.4mm Resin Band</p>
+                            <div class="price-cart">
+                                <p class="price" price="10152">Php 10,152.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio Women's Baby G Watch with Resin Strap.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.8)</span>
+                            </div>
+                            <p class="watch-name">Casio Women's Baby G Watch with Resin Strap</p>
+                            <div class="price-cart">
+                                <p class="price" price="2695">Php 2,695.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" id="kdAuntPearl" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/G-Shock GMAS120MF-8A .png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">G-Shock GMAS120MF-8A</p>
+                            <div class="price-cart">
+                                <p class="price" price="6499">Php 6,499.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio Men's G-Shock GW2310-1 Tough Solar Atomic.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Casio Men's G-Shock GW2310-1 Tough Solar Atomic</p>
+                            <div class="price-cart">
+                                <p class="price" price="5665">Php 5,665.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/G-Shock-GA-700UC.webp" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">G-Shock-GA-700UC</p>
+                            <div class="price-cart">
+                                <p class="price" price="4995">Php 4,995.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio Men's G-Shock Master of G Mudmaster Carbon Core.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Casio Men's G-Shock Master of G Mudmaster Carbon Core</p>
+                            <div class="price-cart">
+                                <p class="price" price="16940">Php 16,940.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio Men's G-Steel by G-Shock Quartz Solar Bluetooth.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Casio Men's G-Steel by G-Shock Quartz Solar Bluetooth</p>
+                            <div class="price-cart">
+                                <p class="price" price="22470">Php 22,470.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Casio-->
+        <div class="casio-container" id="casio">
+            <div>
+                <div class="title" data-aos="fade-right">
+                    <h1>Casio</h1>
+                </div>
+                <div class="watch-items">
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio Edifice Solar Chronograph 45.5mm.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Casio Edifice Solar Chronograph 45.5mm</p>
+                            <div class="price-cart">
+                                <p class="price" price="14139">Php 14,139.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/EDIFICE Initial D & MF Ghost Collaboration.webp" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">EDIFICE Initial D & MF Ghost Collaboration</p>
+                            <div class="price-cart">
+                                <p class="price" price="59447">Php 59,447.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Youth Day-Date 48mm Resin Band.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Youth Day-Date 48mm Resin Band</p> 
+                            <div class="price-cart">
+                                <p class="price" price="1656">Php 1,656.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio Sports Digital 51.3mm Resin Band.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Casio Sports Digital 51.3mm Resin Band</p>
+                            <div class="price-cart">
+                                <p class="price" price="1956">Php 1,956.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio Sports Analog 3-Hand 49.6mm Stainless Steel Band.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Casio Sports Analog 3-Hand 49.6mm Stainless Steel Band</p>
+                            <div class="price-cart">
+                                <p class="price" price="4799">Php 4,799.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Youth Anadigi 39mm Stainless Steel Band.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Youth Anadigi 39mm Stainless Steel Band</p>
+                            <div class="price-cart">
+                                <p class="price" price="3285">Php 3,285.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Vintage Digital Steel Digital 43mm Stainless Steel Band.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Vintage Digital Steel Digital 43mm Stainless Steel Band</p>
+                            <div class="price-cart">
+                                <p class="price" price="2367">Php 2,367.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Dress 3-Hand 46mm Stainless Steel Band.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Dress 3-Hand 46mm Stainless Steel Band</p>
+                            <div class="price-cart">
+                                <p class="price" price="2259">Php 2,259.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio Sports Anadigi 52.2mm Resin Band.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Casio Sports Anadigi 52.2mm Resin Band</p>
+                            <div class="price-cart">
+                                <p class="price" price="3042">Php 3,042.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Analog Gold Date 26mm Stainless Steel Band.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.7)</span>
+                            </div>
+                            <p class="watch-name">Analog Gold Date 26mm Stainless Steel Band</p>
+                            <div class="price-cart">
+                                <p class="price" price="2943">Php 2,943.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio Analog Leather Date 41.5mm Leather Band.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Casio Analog Leather Date 41.5mm Leather Band</p>
+                            <div class="price-cart">
+                                <p class="price" price="1647">Php 1,647.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Dress 3-Hand 34mm Stainless Steel Band.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Dress 3-Hand 34mm Stainless Steel Band</p>
+                            <div class="price-cart">
+                                <p class="price" price="2304">Php 2,304.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Casio Sports Analog Day-Date 45.6mm Stainless Steel Band.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Casio Sports Analog Day-Date 45.6mm Stainless Steel Band</p>
+                            <div class="price-cart">
+                                <p class="price" price="6309">Php 6,309.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Seiko-->
+        <div class="seiko-container" id="seiko">
+            <div>
+                <div class="title" data-aos="fade-right">
+                    <h1>Seiko</h1>
+                </div>
+                <div class="watch-items">
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Presage SRE010J1_900x.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Presage SRE010J1</p>
+                            <div class="price-cart">
+                                <p class="price" price="34250">Php 34,250.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Seiko Watchmaking 110th Anniversary.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Seiko Watchmaking 110th Anniversary</p>
+                            <div class="price-cart">
+                                <p class="price" price="156250">Php 156,250.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Seiko 140th Anniversary.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Seiko 140th Anniversary</p>
+                            <div class="price-cart">
+                                <p class="price" price="56900">Php 56,900.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" id="pokemon" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Prospex SSC813P1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Prospex SSC813P1</p>
+                            <div class="price-cart">
+                                <p class="price" price="33050">Php 33,050.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Seiko 5 Sports SSK003K1 BOY GMT.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.7)</span>
+                            </div>
+                            <p class="watch-name">Seiko 5 Sports SSK003K1 BOY GMT</p>
+                            <div class="price-cart">
+                                <p class="price" price="27300">Php 27,300.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Prospex SPB121J1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Prospex SPB121J1</p>
+                            <div class="price-cart">
+                                <p class="price" price="41700">Php 41,700.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Prospex SPB289J1 Seiko Boutique Exclusive Model.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.7)</span>
+                            </div>
+                            <p class="watch-name">Prospex SPB289J1 Seiko Boutique Exclusive Model</p>
+                            <div class="price-cart">
+                                <p class="price" price="49250">Php 49,250.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Seiko 5 Sports SRPD61K1.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Seiko 5 Sports SRPD61K1</p>
+                            <div class="price-cart">
+                                <p class="price" price="16200">Php 16,200.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Astron SSJ007J1_900x.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Astron SSJ007J1</p>
+                            <div class="price-cart">
+                                <p class="price" price="122000">Php 122,000.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/Seiko 5 Sports SRPH25K1_900x.png" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.7)</span>
+                            </div>
+                            <p class="watch-name">Seiko 5 Sports SRPH25K1</p>
+                            <div class="price-cart">
+                                <p class="price" price="19850">Php 19,850.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Rolex-->
+        <div class="rolex-container" id="rolex">
+            <div>
+                <div class="title" data-aos="fade-right">
+                    <h1>Rolex</h1>
+                </div>
+                <div class="watch-items">
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/rolex-oyster-perpetual-yacht-master-ii-116680-92.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Rolex Oyster Perpetual Yacht Master</p>
+                            <div class="price-cart">
+                                <p class="price" price="1044725">Php 1,044,725.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/rolex-submariner-date-two-tone-blue-dial-men-s-watch-116613lb-78.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.7)</span>
+                            </div>
+                            <p class="watch-name">Rolex Submariner Two Tone Blue</p>
+                            <div class="price-cart">
+                                <p class="price" price="921250">Php 921,250.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/rolex-deepsea-116660-69.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="watch-name">Rolex Deepsea Black Dial Men's Watch</p>
+                            <div class="price-cart">
+                                <p class="price" price="704000">Php 704,000.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="image/rolex-lady-datejust-26-ivory-dial-roman-numerals-women-s-watch-69173-57.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.8)</span>
+                            </div>
+                            <p class="watch-name">Rolex Lady-Datejust 26 Ivory Fial Roman Numeral Women's Watch</p>
+                            <div class="price-cart">
+                                <p class="price" price="356125">Php 356,125.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <div class="footer-contains">
+                <div class="logo">
+                    <img src="image/Logo.png">
+                    <p>Shoes From Which You Shine Through</p>
+                </div>
+                <div class="customer-channels">
+                    <h3>Customer Channels</h3>
+                    <p><a href="#">Order and Deliver</a></p>
+                </div>
+                <div class="terms-and-conditions">
+                    <h3>Terms and Condition</h3>
+                    <p><a href="#">Cancellation Policy</a></p>
+                    <p><a href="#">Refund Policy</a></p>
+                    <p><a href="#">Return and Exchange</a></p>
+                    <p><a href="#">Shipping Policy</a></p>
+                    <p><a href="#">Terms of Use</a></p>
+                </div>
+                <div class="join-us">
+                    <h3>Join Us</h3>
+                    <p>Join our mailing list for updates</p>
+                    <div class="joined-message">Thank You for Joining!!</div>
+                    <div class="email-contain">
+                        <form>
+                            <input type="email" id="email-updates" placeholder="email@example.com" required>
+                            <button type="submit" onclick="joinUs()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p>© 2023 All Rights Reserved. <a href="#">Chronos</a>.</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="main.js"></script>
+    </body>
+</html>

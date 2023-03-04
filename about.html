@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About Us</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="home.html"><img src="image/Logo.png"></a></div>
+            <nav class="navigation">
+                <i class="fa-solid fa-xmark option-close" onclick="optionClose()"></i>
+                <ul>
+                    <li><a href="home.html">Home<span></span></a></li>
+                    <li><a href="about.html">About Us<span></span></a></li>
+                    <li><a href="brands.html">Brands <i class="fa-solid fa-angle-down"></i><span></span></a>
+                        <div class="brands">
+                            <p><a href="brands.html#gshock">G-Shock<span></span></a></p>
+                            <p><a href="brands.html#casio">Casio<span></span></a></p>
+                            <p><a href="brands.html#seiko">Seiko<span></span></a></p>
+                            <p><a href="brands.html#rolex">Rolex<span></span></a></p>
+                         </div> 
+                    </li>
+                    <li><a href="contactUs.html">Contact us<span></span></a></li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping cart-icon" onclick="cartOpen()">
+                    <div class="red-circle">
+                        <div id="total">0</div>
+                    </div>
+                </i>
+            </nav>
+            <div class="option-open"><i class="fa-solid fa-bars" onclick="optionOpen()"></i></div>
+        </header>
+        <!-- Cart -->
+        <div class="cart w3-card">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Cart Content -->
+            <div class="cart-content">
+
+               
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- close -->
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="cartClose()"></i>
+        </div>
+
+        <!--Content-->
+
+        <div class="heading"><h1 class="w3-monospace">About Chronos</h1></div>
+        <div class="about-us-container">
+            <p>
+                These days, life moves from work to play, and Chronos has the appropriate piece for one's hectic schedule, style, 
+                and moods. We are the go-to destination for watch lovers and modern urban professionals who want to work, play, and 
+                indulge as the exclusive distributor of major watch brands such as G-Shock, Casio, Seiko, and Rolex.
+            </p> <br>
+            <p>
+                Chronos offers a diverse range of watch designs, including legacy and classic models, novelty and designer styles, 
+                sports multi-function and digital watches, and mechanical and analog models. Timepieces that blend well-thought-out 
+                designs and superior craftsmanship can be found here. Chronos is a place where quality is important.
+            </p> <br>
+            <p>
+                We provide a wide range of timepieces while remaining committed to our objective of providing fashionable, 
+                high-quality timepieces that complement your lifestyle.
+            </p> <br>
+            <p>
+                Find your signature timepiece today at Chronos.
+            </p>
+        </div>
+
+
+        <!--footer-->
+        <footer>
+            <div class="footer-contains">
+                <div class="logo">
+                    <img src="image/Logo.png">
+                    <p>It's Your Time</p>
+                </div>
+                <div class="customer-channels">
+                    <h3>Customer Channels</h3>
+                    <p><a href="#">Order and Deliver</a></p>
+                </div>
+                <div class="terms-and-conditions">
+                    <h3>Terms and Condition</h3>
+                    <p><a href="#">Cancellation Policy</a></p>
+                    <p><a href="#">Refund Policy</a></p>
+                    <p><a href="#">Return and Exchange</a></p>
+                    <p><a href="#">Shipping Policy</a></p>
+                    <p><a href="#">Terms of Use</a></p>
+                </div>
+                <div class="join-us">
+                    <h3>Join Us</h3>
+                    <p>Join our mailing list for updates</p>
+                    <div class="joined-message">Thank You for Joining!!</div>
+                    <div class="email-contain">
+                        <form>
+                            <input type="email" id="email-updates" placeholder="email@example.com" required>
+                            <button type="submit" onclick="joinUs()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p>© 2023 All Rights Reserved. <a href="#">Chronos</a>.</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="main.js"></script>
+    </body>
+</html>

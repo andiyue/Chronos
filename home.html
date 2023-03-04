@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chronos</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Main content-->
+        <header>
+            <div class="logo"><a href="home.html"><img src="image/Logo.png"></a></div>
+            <nav class="navigation">
+                <i class="fa-solid fa-xmark option-close" onclick="optionClose()"></i>
+                <ul>
+                    <li><a href="home.html">Home<span></span></a></li>
+                    <li><a href="about.html">About Us<span></span></a></li>
+                    <li><a href="brands.html">Brands <i class="fa-solid fa-angle-down"></i><span></span></a>
+                        <div class="brands">
+                            <p><a href="brands.html#gshock">G-Shock<span></span></a></p>
+                            <p><a href="brands.html#casio">Casio<span></span></a></p>
+                            <p><a href="brands.html#seiko">Seiko<span></span></a></p>
+                            <p><a href="brands.html#rolex">Rolex<span></span></a></p>
+                         </div> 
+                    </li>
+                    <li><a href="contactUs.html">Contact us<span></span></a></li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping cart-icon" onclick="cartOpen()">
+                    <div class="red-circle">
+                        <div id="total">0</div>
+                    </div>
+                </i>
+            </nav>
+            <div class="option-open"><i class="fa-solid fa-bars" onclick="optionOpen()"></i></div>
+        </header>
+        <!-- Cart -->
+        <div class="cart w3-card">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Cart Content -->
+            <div class="cart-content">
+
+               
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- close -->
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="cartClose()"></i>
+        </div>
+
+        <div class="front-page-container">
+            <div class="left-side">
+                <h2 class="w3-animate-left">It's Your Time</h2>
+                <button class="w3-animate-left"><a href="brands.html">Shop Now!</a></button>
+            </div>
+            <div class="right-part">
+                <div class="logo-container w3-animate-zoom">
+                    <div class="images-container"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Popular Products-->
+        <div class="popular-products-container">
+            <div class="title" data-aos="fade-right">
+                <h1>Recommended Products</h1>
+            </div>
+            <div class="product-items">
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="image/Astron SSJ007J1_900x.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="shoe-name">Astron SSJ007J1 </p>
+                        <div class="price-cart">
+                            <p class="price">Php 122,000.00</p>
+                            <a href="brands.html#seiko"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="image/Youth Day-Date 48mm Resin Band.jpg">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="shoe-name">Youth Day-Date 48mm Resin Band</p>
+                        <div class="price-cart">
+                            <p class="price">Php 1,656.00</p>
+                            <a href="brands.html#casio"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="image/Prospex SPB121J1.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="shoe-name">Prospex SPB121J1</p>
+                        <div class="price-cart">
+                            <p class="price">Php 41,700.00</p>
+                            <a href="brands.html#seiko"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="image/Presage SRE010J1_900x.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="shoe-name">Presage SRE010J1</p>
+                        <div class="price-cart">
+                            <p class="price">Php 34,250.00</p>
+                            <a href="brands.html#seiko"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--New Arrival-->
+        <div class="new-arrival-container">
+            <div class="title" data-aos="fade-right">
+                <h1>New Arrival</h1>
+            </div>
+            <div class="product-items">
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="image/Youth Anadigi 39mm Stainless Steel Band.jpg">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="shoe-name">Youth Anadigi 39mm Stainless Steel Band</p>
+                        <div class="price-cart">
+                            <p class="price">Php 3,285.00</p>
+                            <a href="brands.html#casio"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="image/Casio Men's G-Shock GW2310-1 Tough Solar Atomic.jpg">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="shoe-name">Casio Men's G-Shock Tough Solar Atomic</p>
+                        <div class="price-cart">
+                            <p class="price">Php 5,665.00</p>
+                            <a href="brands.html#gshock"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="image/Casio Analog Leather Date 41.5mm Leather Band.jpg">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="shoe-name">Casio Analog Leather Date 41.5mm Leather Band</p>
+                        <div class="price-cart">
+                            <p class="price">Php 1,647.00</p>
+                            <a href="brands.html#casio"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="image/Dress 3-Hand 34mm Stainless Steel Band.jpg">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="shoe-name">Dress 3-Hand 34mm Stainless Steel Band</p>
+                        <div class="price-cart">
+                            <p class="price">Php 2,304.00</p>
+                            <a href="brands.html#casio"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--limited edition-->
+        <div class="new-arrival-container">
+            <div class="title" data-aos="fade-right">
+                <h1>Limited Edition</h1>
+            </div>
+            <div class="product-items">
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="image/G-Shock 40th anniversary Adventurer's Stone Series.jpg">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="shoe-name">G-Shock 40th anniversary Adventurer's Stone Series</p>
+                        <div class="price-cart">
+                            <p class="price">Php 20,899.00</p>
+                            <a href="brands.html#gshock"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="image/EDIFICE Initial D & MF Ghost Collaboration.webp">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="shoe-name">EDIFICE Initial D & MF Ghost Collaboration</p>
+                        <div class="price-cart">
+                            <p class="price">Php 59,447.00</p>
+                            <a href="brands.html#casio"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="image/Seiko 140th Anniversary.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="shoe-name">Seiko 140th Anniversary</p>
+                        <div class="price-cart">
+                            <p class="price">Php 56,900.00</p>
+                            <a href="brands.html#seiko"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="image/Seiko Watchmaking 110th Anniversary.png">
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="shoe-name">Seiko Watchmaking 110th Anniversary</p>
+                        <div class="price-cart">
+                            <p class="price">Php 156,250.00</p>
+                            <a href="brands.html#seiko"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Shipping and payment-->
+        <div class="shipping-container">
+            <div class="free-shipping">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h1>Free Shipping</h1>
+                <p>Save up on shipping for a minimum purchase of P3,000.</p>
+            </div>
+            <div class="cod">
+                <i class="fa-solid fa-coins"></i>
+                <h1>COD PAYMENT</h1>
+                <p>We only accept COD from any location</p>
+            </div>
+            <div class="contact-us-email">
+                <i class="fa-solid fa-envelope"></i>
+                <h1>CONTACT US</h1>
+                <p>We'd like to hear from you! Send us your feedback at<br>inquire@chronos.ph</p>
+            </div>
+        </div>
+
+        <!--About-->
+        <div class="about-container">
+            <div>
+                <h1>About Us</h1>
+                <p>Chronos is first class products for your wrist.
+                    renowned brands such as <b><a href="#">G-Shock</a></b>, <b><a href="#">Casio</a></b>, <b><a href="#">Seiko</a></b>
+                    and <b><a href="#">Rolex</a></b>!</p>
+            </div>
+        </div>
+        
+        <!--footer-->
+        <footer>
+            <div class="footer-contains">
+                <div class="logo">
+                    <img src="image/Logo.png">
+                    <p>It's Your Time</p>
+                </div>
+                <div class="customer-channels">
+                    <h3>Customer Channels</h3>
+                    <p><a href="#">Order and Deliver</a></p>
+                </div>
+                <div class="terms-and-conditions">
+                    <h3>Terms and Condition</h3>
+                    <p><a href="#">Cancellation Policy</a></p>
+                    <p><a href="#">Refund Policy</a></p>
+                    <p><a href="#">Return and Exchange</a></p>
+                    <p><a href="#">Shipping Policy</a></p>
+                    <p><a href="#">Terms of Use</a></p>
+                </div>
+                <div class="join-us">
+                    <h3>Join Us</h3>
+                    <p>Join our mailing list for updates</p>
+                    <div class="joined-message">Thank You for Joining!!</div>
+                    <div class="email-contain">
+                        <form>
+                            <input type="email" id="email-updates" placeholder="email@example.com" required>
+                            <button type="submit" onclick="joinUs()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p>© 2023 All Rights Reserved. <a href="#">Chronos</a>.</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="main.js"></script>
+    </body>
+</html>
